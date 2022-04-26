@@ -4,8 +4,8 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-      <a *ngFor="let string of historial" href="#" class="list-group-item list-group-item-action">
-        {{string}}
+      <a *ngFor="let string of historial" href="#" class="list-group-item list-group-item-action" (click)="buscar(string)">
+        {{string | titlecase}}
       </a>
     </div>
   </div>
